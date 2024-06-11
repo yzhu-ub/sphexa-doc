@@ -3,31 +3,57 @@ Getting Started
 
 .. _installation:
 
-Installation
+Compile and run SPHEXA locally
 ------------
-
-To use Lumache, first install it using pip:
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+   mkdir build
+   cd build
+   cmake <GIT_SOURCE_DIR>
 
-Creating recipes
-----------------
+Compilation on sciCORE
+------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+.. code-block:: console
 
-.. autofunction:: lumache.get_random_ingredients
+   ml HDF5/1.14.2-gompi-2022a-zen2
+   ml CMake/3.23.1-GCCcore-11.3.0
+   ml CUDA/11.8.0
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+   mkdir build
+   cd build
+   cmake <GIT_SOURCE_DIR>
 
-.. autoexception:: lumache.InvalidKindError
+Compilation on Piz Daint
+------------
 
-For example:
+.. code-block:: console
 
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+   module load daint-gpu
+   module load CMake/3.22.1
+   module load PrgEnv-cray
+   module load cdt/22.05           # will load cce/14.0.0
+   module load nvhpc-nompi/22.2    # will load nvcc/11.6
+   module load gcc/11.2.0
+   module load cray-hdf5-parallel
+
+   mkdir build
+   cd build
+
+   # C-compiler is needed for hdf5 detection
+   CC=cc CXX=CC cmake -DCMAKE_CUDA_ARCHITECTURES=60 -S <GIT_SOURCE_DIR>
+
+
+.. _installation_spack:
+
+Installation using Spack
+------------
+
+Some text
+
+.. code-block:: console
+
+   some text
+
+
