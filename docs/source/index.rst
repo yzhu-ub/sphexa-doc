@@ -20,8 +20,7 @@ Contents
 .. toctree::
    :maxdepth: 1
    :hidden:
-   .. getting_started
-   
+
    getting_started/overview
    getting_started/local_compilation
    getting_started/scicore_compilation
