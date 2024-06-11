@@ -20,5 +20,7 @@ Contents
 .. toctree::
 
    getting_started
-   usage
-   api
+   tutorial
+   user_documentation
+   developer_documentation
+   about
