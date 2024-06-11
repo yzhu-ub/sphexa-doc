@@ -18,9 +18,42 @@ Contents
 --------
 
 .. toctree::
-
+   :maxdepth: 1
+   :hidden:
    getting_started
+
+.. toctree::
+   :caption: Tutorial
+   :maxdepth: 1
+   :hidden:
+
    tutorial
+
+.. toctree::
+   :caption: User Documentation
+   :maxdepth: 1
+   :hidden:
+
    user_documentation
+   user_documentation/command_line_options
+   user_documentation/builtin_initial_conditions
+   user_documentation/propagators
+   user_documentation/io_interface
+   user_documentation/utilities
+
+
+.. toctree::
+   :caption: Developer Documentation
+   :maxdepth: 1
+   :hidden:
+
    developer_documentation
+   architecture_overview
+   writing_test_cases
+
+.. toctree::
+   :caption: About
+   :maxdepth: 1
+   :hidden:
+   
    about
