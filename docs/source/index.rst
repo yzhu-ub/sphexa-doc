@@ -1,4 +1,4 @@
-Welcome to Lumache's documentation!
+Welcome to SPH-EXA!
 ===================================
 
 **SPH-EXA** is a C++20 simulation code for hydrodynamics simulations (with gravity and other physics), parallelized with MPI, OpenMP, CUDA, and HIP.
