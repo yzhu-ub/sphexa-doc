@@ -20,7 +20,13 @@ Contents
 .. toctree::
    :maxdepth: 1
    :hidden:
-   getting_started
+   .. getting_started
+   
+   getting_started/overview
+   getting_started/local_compilation
+   getting_started/scicore_compilation
+   getting_started/piz_daint_compilation
+   getting_started/lumi_compilation
 
 .. toctree::
    :caption: Tutorial
@@ -34,7 +40,6 @@ Contents
    :maxdepth: 1
    :hidden:
 
-   user_documentation
    user_documentation/command_line_options
    user_documentation/builtin_initial_conditions
    user_documentation/propagators
@@ -47,7 +52,6 @@ Contents
    :maxdepth: 1
    :hidden:
 
-   developer_documentation
    architecture_overview
    writing_test_cases
 
