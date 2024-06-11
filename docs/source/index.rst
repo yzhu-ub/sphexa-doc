@@ -21,6 +21,13 @@ Contents
    :maxdepth: 1
    :hidden:
 
+   quick_start
+
+.. toctree::
+   :caption: Getting Started
+   :maxdepth: 1
+   :hidden:
+
    getting_started/overview
    getting_started/local_compilation
    getting_started/scicore_compilation
