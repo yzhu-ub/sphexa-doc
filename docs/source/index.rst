@@ -45,7 +45,6 @@ Contents
    user_documentation/io_interface
    user_documentation/utilities
 
-
 .. toctree::
    :caption: Developer Documentation
    :maxdepth: 1
