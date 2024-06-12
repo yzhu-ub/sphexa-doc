@@ -1,6 +1,10 @@
 Compilation Overview
 ====================
 
+.. note::
+
+    This section only lists the compilation steps for minimal functionalities. Regarding functionalities that requires a third-party dependency, please check ::doc:`user_documentation` for details. 
+
 Compiling SPH-EXA is similar to compiling any other C++ projects on Linux/Unix machines. SPH-EXA utilizes the latest C++ features, requiring C++ 20 for a complete build of the CPU code. For its CUDA part, the minimum supported CUDA version is CUDA 11.2 with a C++17 host compiler, e.g. GCC 9.3.0.
 
 For ease of use, the recommended minimum version of CUDA is 11.4.1 which supports GCC 11, providing both the required C++20 support and bug-free CUDA host compilation. 

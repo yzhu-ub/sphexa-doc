@@ -32,3 +32,8 @@ Compilation **with CUDA**:
     module load nvhpc-nompi/22.2    # will load nvcc/11.6
     module load gcc/11.2.0
     module load cray-hdf5-parallel
+
+    mkdir build
+    cd build
+    cmake <GIT_SOURCE_DIR>
+    make -j16 sphexa-cuda
