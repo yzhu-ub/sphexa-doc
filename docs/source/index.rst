@@ -21,8 +21,8 @@ Contents
 
    quick_start
 
-.. toctree::
 
+.. toctree::
    :caption: Getting Started
    :maxdepth: 1
    :hidden:
@@ -33,16 +33,16 @@ Contents
    getting_started/piz_daint_compilation
    getting_started/lumi_compilation
 
-.. toctree::
 
+.. toctree::
    :caption: Tutorial
    :maxdepth: 1
    :hidden:
 
    tutorial
 
-.. toctree::
 
+.. toctree::
    :caption: User Documentation
    :maxdepth: 1
    :hidden:
@@ -53,8 +53,8 @@ Contents
    user_documentation/io_interface
    user_documentation/utilities
 
-.. toctree::
 
+.. toctree::
    :caption: Developer Documentation
    :maxdepth: 1
    :hidden:
@@ -62,8 +62,8 @@ Contents
    architecture_overview
    writing_test_cases
 
+
 .. toctree::
-   
    :caption: About
    :maxdepth: 1
    :hidden:
