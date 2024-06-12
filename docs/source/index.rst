@@ -16,10 +16,7 @@ how to :ref:`installation` the project.
 
 Contents
 --------
-
 .. toctree::
-   :maxdepth: 1
-   :hidden:
 
    quick_start
 
