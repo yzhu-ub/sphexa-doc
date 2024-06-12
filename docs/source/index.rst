@@ -17,6 +17,40 @@ how to :ref:`installation` the project.
 Contents
 --------
 
+Ascent Documentation
+======================
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   QuickStart
+
+.. toctree::
+   :caption: Tutorial
+   :maxdepth: 1
+   :hidden:
+
+   Tutorial
+   Tutorial_Setup
+   Tutorial_Intro
+   Tutorial_CloverLeaf_Demos
+
+
+.. toctree::
+   :caption: User Documentation
+   :maxdepth: 1
+   :hidden:
+
+   Overview
+   ExampleIntegrations
+   BuildingAscent
+   AscentAPI
+   Actions/index
+   FeatureMap
+   Utilities
+   GPU_notes
+
 .. toctree::
 
    quick_start
