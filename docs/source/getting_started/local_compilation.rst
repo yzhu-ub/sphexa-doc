@@ -1,2 +1,3 @@
-Compile Locally
-=====
+Local Compilation
+=================
+

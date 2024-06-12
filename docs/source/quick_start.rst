@@ -1,7 +1,7 @@
 Quick Started
 =============
 
-Compile and run SPH-EXA
+A quick local run
 -----------------------
 
 To run SPH-EXA, the following software requirements have to be met:
