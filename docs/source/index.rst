@@ -17,12 +17,7 @@ how to :ref:`installation` the project.
 Contents
 --------
 
-Ascent Documentation
-======================
-
 .. toctree::
-   :maxdepth: 1
-   :hidden:
 
    quick_start
 
