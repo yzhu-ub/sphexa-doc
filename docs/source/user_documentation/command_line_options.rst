@@ -29,9 +29,11 @@ Arguments:
   provide an HDF5 file with initial conditions, or use one of the built-in initial conditions. See :doc:`user_documentation/builtin_initial_conditions` for available initial conditions. 
 
 * `--glass <glass file path>`
+  
   template glass block for IC generation avaiable from DOI
 
 * `-n NUM`
+  
   Run the simulation with NUM^3 (NUM to the cube) number of particles (for named test cases). 
   
   .. note::
@@ -39,18 +41,23 @@ Arguments:
     The number of actual particles might vary with initial conditions.
 
 * `-s NUM`
+  
   Run the simulation with NUM of iterations (time-steps) if NUM is integer. Run until the specified physical time if NUM is real.
 
 * `-w NUM`
+  
   Dump particle data every NUM iterations (time-steps) if NUM is integer. Dump data at the specified physical time if NUM is real.
 
 * `-f FIELDS`
+  
   Comma separated list of particle fields for file output dumps. See a list of common ouput fields below.
 
 * `--duration NUM`
+  
   Run the simulation for certain wallclock time, specified in seconds (integer). Dump a checkpoint at the end of the duration.
 
 * `--quiet`
+  
   Don't print any output to stdout
 
 
