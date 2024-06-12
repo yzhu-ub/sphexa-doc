@@ -22,6 +22,7 @@ Contents
    quick_start
 
 .. toctree::
+
    :caption: Getting Started
    :maxdepth: 1
    :hidden:
@@ -33,6 +34,7 @@ Contents
    getting_started/lumi_compilation
 
 .. toctree::
+
    :caption: Tutorial
    :maxdepth: 1
    :hidden:
@@ -40,6 +42,7 @@ Contents
    tutorial
 
 .. toctree::
+
    :caption: User Documentation
    :maxdepth: 1
    :hidden:
@@ -51,6 +54,7 @@ Contents
    user_documentation/utilities
 
 .. toctree::
+
    :caption: Developer Documentation
    :maxdepth: 1
    :hidden:
@@ -59,6 +63,7 @@ Contents
    writing_test_cases
 
 .. toctree::
+   
    :caption: About
    :maxdepth: 1
    :hidden:
