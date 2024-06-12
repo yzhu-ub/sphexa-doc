@@ -24,27 +24,7 @@ Ascent Documentation
    :maxdepth: 1
    :hidden:
 
-   QuickStart
-
-.. toctree::
-   :caption: Tutorial
-   :maxdepth: 1
-   :hidden:
-
-   getting_started/overview
-
-
-.. toctree::
-   :caption: User Documentation
-   :maxdepth: 1
-   :hidden:
-
-   getting_started/overview
-
-.. toctree::
-
    quick_start
-
 
 .. toctree::
    :caption: Getting Started
