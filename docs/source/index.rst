@@ -37,7 +37,7 @@ Contents
    :maxdepth: 1
    :hidden:
 
-   tutorial
+   tutorial/running_examples
 
 
 .. toctree::

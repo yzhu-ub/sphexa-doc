@@ -8,13 +8,16 @@ For compilation on Piz Daint, **CPU only**:
 
 .. code-block:: console
 
-    ml HDF5/1.14.2-gompi-2022a-zen2
-    ml CMake/3.23.1-GCCcore-11.3.0
-    ml CUDA/11.8.0
+    module load PrgEnv-cray
+    module load cdt/22.05 # will load cce/14.0.0
+    export PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/22.2/cuda/11.6/bin:$PATH
+    module load gcc/11.2.0
+    module load cray-hdf5-parallel
+    export LD_LIBRARY_PATH=$CRAY_LD_LIBRARY_PATH:LD_LIBRARY_PATH
 
     mkdir build
     cd build
-    cmake <GIT_SOURCE_DIR>
+    CC=cc CXX=CC cmake -DCMAKE_CUDA_ARCHITECTURES=60 -S <GIT_SOURCE_DIR>
     make -j16 sphexa
 
 
@@ -35,5 +38,5 @@ Compilation **with CUDA**:
 
     mkdir build
     cd build
-    cmake <GIT_SOURCE_DIR>
+    CC=cc CXX=CC cmake -DCMAKE_CUDA_ARCHITECTURES=60 -S <GIT_SOURCE_DIR>
     make -j16 sphexa-cuda
