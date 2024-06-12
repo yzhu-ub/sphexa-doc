@@ -31,10 +31,7 @@ Ascent Documentation
    :maxdepth: 1
    :hidden:
 
-   Tutorial
-   Tutorial_Setup
-   Tutorial_Intro
-   Tutorial_CloverLeaf_Demos
+   getting_started/overview
 
 
 .. toctree::
@@ -42,14 +39,7 @@ Ascent Documentation
    :maxdepth: 1
    :hidden:
 
-   Overview
-   ExampleIntegrations
-   BuildingAscent
-   AscentAPI
-   Actions/index
-   FeatureMap
-   Utilities
-   GPU_notes
+   getting_started/overview
 
 .. toctree::
 
