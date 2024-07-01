@@ -30,6 +30,7 @@ Compilation on LUMI with Ascent
 - Build SPH-EXA with in-situ data support (with GPU code)
 
 .. code-block:: console
+
     cd ~
     git clone https://github.com/unibas-dmi-hpc/SPH-EXA.git
     cd SPH-EXA
@@ -46,11 +47,13 @@ Compilation on LUMI with Ascent
 Then tweak the flags a bit:
 
 .. code-block:: console
+
     vi main/src/sphexa/CMakeFiles/sphexa-hip.dir/flags.make
 
 Remove the flag `-fcompare-debug-second` from `CXX_FLAGS`, Save. Then,
 
 .. code-block:: console
+
     make -j16 sphexa-hip
 
 SPH-EXA provides sample scripts designed for visualizing common scenarios. To test these scripts, start by copying all contents from `SPH-EXA/scripts/ascent` into the directory where `sphexa-hip` is located.
@@ -72,9 +75,11 @@ Examples
 In-situ density PDF for a 400^3 turbulence simulation until physical time t=0.251s:
 
 .. code-block:: yaml
-        actions_file: "testcases/turbulence/pdf.yaml"
+
+    actions_file: "testcases/turbulence/pdf.yaml"
 
 .. code-block:: console
+
     sphexa-hip --init <init_data_path> --prop insituvis_ve -s 0.251 -n 400 -v x,y,z,vx,vy,vz,rho
 
 
