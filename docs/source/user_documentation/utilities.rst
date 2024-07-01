@@ -1,17 +1,20 @@
 Utilities
 =====
 
-With some third-party tools SPH-EXA can have extra features which might be very useful during simulation. Here we introduce some important integrations that user can benefit from.
+With certain third-party tools, SPH-EXA can extend its functionality with additional features during simulations. Below are several key integrations that can be utilized for enhanced capabilities.
 
 In-Situ data analysis
 -----
 
 
 Compilation on LUMI with Ascent
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Set up environment
 
 .. note::
 
-    Please make sure you have an up-to-date installation of CMake (>= v3.24) in user directory that you can execute from. 
+    Please ensure that you have a recent installation of CMake (version 3.24 or higher) that is accessible for execution.
 
 
 .. code-block:: console
@@ -24,7 +27,7 @@ Compilation on LUMI with Ascent
 
     spack load ascent
 
-Build SPH-EXA with in-situ data support (with GPU code):
+- Build SPH-EXA with in-situ data support (with GPU code)
 
 .. code-block:: console
     cd ~
@@ -45,15 +48,15 @@ Then tweak the flags a bit:
 .. code-block:: console
     vi main/src/sphexa/CMakeFiles/sphexa-hip.dir/flags.make
 
-And remove the flag `-fcompare-debug-second` from `CXX_FLAGS`. Save. Then,
+Remove the flag `-fcompare-debug-second` from `CXX_FLAGS`, Save. Then,
 
 .. code-block:: console
     make -j16 sphexa-hip
 
+SPH-EXA provides sample scripts designed for visualizing common scenarios. To test these scripts, start by copying all contents from `SPH-EXA/scripts/ascent` into the directory where `sphexa-hip` is located.
 
-SPH-EXA has a few sample scripts for visualizing typical scenarios. To test them, first copy all contents from `SPH-EXA/scripts/ascent` into the same directory as `sphexa-hip`. 
+Next, locate the file named `ascent_actions.yaml` and modify line 9 to specify the script you wish to execute.
 
-Then, in file `ascent_actions.yaml`, change line 9 and point it to the script you would like to execute.
 
 Submit the job
 ^^^^^^^^^^^^^^
@@ -62,7 +65,7 @@ Submit the job
 
     Only the propagators with visualization infrastructure integrated, i.e. `insituvis_ve` and `insituvis`, can be executed with in-situ data analysis pipeline.
 
-When submitting a simulation job for visualization, please note the possible fields to be exported. They should be specified with flag `-v`.
+When submitting a simulation job for in-situ visualization, please ensure to specify the fields being used during visualization using the -v flag.
 
 Examples
 
